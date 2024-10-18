@@ -10,4 +10,4 @@
 	url = https://github.com/RITRacingSoftware/Formula-Main-DBC.git
 [submodule "lib/SDL2"]
 	path = lib/SDL2
-	url = https://github.com/libsdl-org/SDL
+	url = https://github.com/libsdl-org/SDL/tree/release-2.30.8

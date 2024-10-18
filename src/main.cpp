@@ -1,4 +1,5 @@
 #include <Arduino.h>
+#include <LibPrintf.h>
 
 #include "data-manager.h"
 #include "display-manager.h"
@@ -6,14 +7,15 @@
 
 
 #include "lvgl.h"
-#include "hal/sdl2/app_hal.h"
+#include "app_hal.h"
 
 #include "demos/lv_demos.h"
 #include <demos/widgets/lv_demo_widgets.h>
 
 
 void setup()
-{
+{	
+	Arduino::setup();
 	Serial.begin(9600);
 	Serial.printf("Starting!\n");
 
@@ -28,6 +30,7 @@ void setup()
 
 void loop()
 {
+	Arduino::loop();
 	DataManager::update();
 	hal_loop();
 	delay(100);
