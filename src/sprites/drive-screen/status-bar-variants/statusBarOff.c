@@ -17,11 +17,11 @@
 #define LV_ATTRIBUTE_MEM_ALIGN
 #endif
 
-#ifndef LV_ATTRIBUTE_IMG_STATUS BAR OFF
-#define LV_ATTRIBUTE_IMG_STATUS BAR OFF
+#ifndef LV_ATTRIBUTE_IMG_STATUSBAROFF
+#define LV_ATTRIBUTE_IMG_STATUSBAROFF
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_STATUS BAR OFF uint8_t Status Bar Off_map[] = {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_STATUSBAROFF uint8_t statusBarOff_map[] = {
   0x03, 0x03, 0x0b, 0x80, 	/*Color of index 0*/
   0x03, 0x04, 0x0d, 0xff, 	/*Color of index 1*/
 
@@ -212,12 +212,12 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_STATUS BA
   0x7f, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0x80, 
 };
 
-const lv_img_dsc_t Status Bar Off = {
+const lv_img_dsc_t statusBarOff = {
   .header.cf = LV_IMG_CF_INDEXED_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
   .header.w = 138,
   .header.h = 185,
   .data_size = 3338,
-  .data = Status Bar Off_map,
+  .data = statusBarOff_map,
 };

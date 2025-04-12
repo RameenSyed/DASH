@@ -17,11 +17,11 @@
 #define LV_ATTRIBUTE_MEM_ALIGN
 #endif
 
-#ifndef LV_ATTRIBUTE_IMG_[ERROUTOFJUICE]
-#define LV_ATTRIBUTE_IMG_[ERROUTOFJUICE]
+#ifndef LV_ATTRIBUTE_IMG_ERROUTOFJUICE
+#define LV_ATTRIBUTE_IMG_ERROUTOFJUICE
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_[ERROUTOFJUICE] uint8_t [errOutOfJuice]_map[] = {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_ERROUTOFJUICE uint8_t errOutOfJuice_map[] = {
   0x00, 0x00, 0x01, 0x08, 	/*Color of index 0*/
   0x03, 0x04, 0x0d, 0xdd, 	/*Color of index 1*/
 
@@ -72,12 +72,12 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_[ERROUTOF
   0x03, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0x00, 
 };
 
-const lv_img_dsc_t [errOutOfJuice] = {
+const lv_img_dsc_t errOutOfJuice = {
   .header.cf = LV_IMG_CF_INDEXED_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
   .header.w = 85,
   .header.h = 45,
   .data_size = 503,
-  .data = [errOutOfJuice]_map,
+  .data = errOutOfJuice_map,
 };

@@ -17,11 +17,11 @@
 #define LV_ATTRIBUTE_MEM_ALIGN
 #endif
 
-#ifndef LV_ATTRIBUTE_IMG_[ERRSLAVECOMMTEMPS]
-#define LV_ATTRIBUTE_IMG_[ERRSLAVECOMMTEMPS]
+#ifndef LV_ATTRIBUTE_IMG_ERRSLAVECOMMTEMPS
+#define LV_ATTRIBUTE_IMG_ERRSLAVECOMMTEMPS
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_[ERRSLAVECOMMTEMPS] uint8_t [errSlaveCommTemps]_map[] = {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_ERRSLAVECOMMTEMPS uint8_t errSlaveCommTemps_map[] = {
   0x00, 0x00, 0x01, 0x09, 	/*Color of index 0*/
   0x03, 0x04, 0x0d, 0xdd, 	/*Color of index 1*/
 
@@ -72,12 +72,12 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_[ERRSLAVE
   0x03, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xfe, 0x00, 
 };
 
-const lv_img_dsc_t [errSlaveCommTemps] = {
+const lv_img_dsc_t errSlaveCommTemps = {
   .header.cf = LV_IMG_CF_INDEXED_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
   .header.w = 124,
   .header.h = 45,
   .data_size = 728,
-  .data = [errSlaveCommTemps]_map,
+  .data = errSlaveCommTemps_map,
 };

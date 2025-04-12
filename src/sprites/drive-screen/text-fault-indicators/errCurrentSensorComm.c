@@ -17,11 +17,11 @@
 #define LV_ATTRIBUTE_MEM_ALIGN
 #endif
 
-#ifndef LV_ATTRIBUTE_IMG_[ERRCURRENTSENSORCOMM]
-#define LV_ATTRIBUTE_IMG_[ERRCURRENTSENSORCOMM]
+#ifndef LV_ATTRIBUTE_IMG_ERRCURRENTSENSORCOMM
+#define LV_ATTRIBUTE_IMG_ERRCURRENTSENSORCOMM
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_[ERRCURRENTSENSORCOMM] uint8_t [errCurrentSensorComm]_map[] = {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_ERRCURRENTSENSORCOMM uint8_t errCurrentSensorComm_map[] = {
   0x00, 0x00, 0x02, 0x0b, 	/*Color of index 0*/
   0x03, 0x04, 0x0d, 0xdd, 	/*Color of index 1*/
 
@@ -72,12 +72,12 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_[ERRCURRE
   0x03, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xfe, 0x00, 
 };
 
-const lv_img_dsc_t [errCurrentSensorComm] = {
+const lv_img_dsc_t errCurrentSensorComm = {
   .header.cf = LV_IMG_CF_INDEXED_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
   .header.w = 132,
   .header.h = 45,
   .data_size = 773,
-  .data = [errCurrentSensorComm]_map,
+  .data = errCurrentSensorComm_map,
 };

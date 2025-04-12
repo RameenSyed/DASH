@@ -17,11 +17,11 @@
 #define LV_ATTRIBUTE_MEM_ALIGN
 #endif
 
-#ifndef LV_ATTRIBUTE_IMG_[ERRCELLVOLTIRRAT]
-#define LV_ATTRIBUTE_IMG_[ERRCELLVOLTIRRAT]
+#ifndef LV_ATTRIBUTE_IMG_ERRCELLVOLTIRRAT
+#define LV_ATTRIBUTE_IMG_ERRCELLVOLTIRRAT
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_[ERRCELLVOLTIRRAT] uint8_t [errCellVoltIrrat]_map[] = {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_ERRCELLVOLTIRRAT uint8_t errCellVoltIrrat_map[] = {
   0x00, 0x00, 0x01, 0x08, 	/*Color of index 0*/
   0x03, 0x04, 0x0d, 0xdc, 	/*Color of index 1*/
 
@@ -72,12 +72,12 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_[ERRCELLV
   0x03, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0x80, 
 };
 
-const lv_img_dsc_t [errCellVoltIrrat] = {
+const lv_img_dsc_t errCellVoltIrrat = {
   .header.cf = LV_IMG_CF_INDEXED_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
   .header.w = 102,
   .header.h = 45,
   .data_size = 593,
-  .data = [errCellVoltIrrat]_map,
+  .data = errCellVoltIrrat_map,
 };

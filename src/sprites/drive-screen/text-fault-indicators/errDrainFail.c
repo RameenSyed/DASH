@@ -17,11 +17,11 @@
 #define LV_ATTRIBUTE_MEM_ALIGN
 #endif
 
-#ifndef LV_ATTRIBUTE_IMG_[ERRDRAINFAIL]
-#define LV_ATTRIBUTE_IMG_[ERRDRAINFAIL]
+#ifndef LV_ATTRIBUTE_IMG_ERRDRAINFAIL
+#define LV_ATTRIBUTE_IMG_ERRDRAINFAIL
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_[ERRDRAINFAIL] uint8_t [errDrainFail]_map[] = {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_ERRDRAINFAIL uint8_t errDrainFail_map[] = {
   0x00, 0x00, 0x02, 0x08, 	/*Color of index 0*/
   0x03, 0x04, 0x0d, 0xde, 	/*Color of index 1*/
 
@@ -72,12 +72,12 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_[ERRDRAIN
   0x03, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xf8, 0x00, 
 };
 
-const lv_img_dsc_t [errDrainFail] = {
+const lv_img_dsc_t errDrainFail = {
   .header.cf = LV_IMG_CF_INDEXED_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
   .header.w = 66,
   .header.h = 45,
   .data_size = 413,
-  .data = [errDrainFail]_map,
+  .data = errDrainFail_map,
 };

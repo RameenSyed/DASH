@@ -17,11 +17,11 @@
 #define LV_ATTRIBUTE_MEM_ALIGN
 #endif
 
-#ifndef LV_ATTRIBUTE_IMG_[ERRTEMPIRRAT]
-#define LV_ATTRIBUTE_IMG_[ERRTEMPIRRAT]
+#ifndef LV_ATTRIBUTE_IMG_ERRTEMPIRRAT
+#define LV_ATTRIBUTE_IMG_ERRTEMPIRRAT
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_[ERRTEMPIRRAT] uint8_t [errTempIrrat]_map[] = {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_ERRTEMPIRRAT uint8_t errTempIrrat_map[] = {
   0x00, 0x00, 0x02, 0x0c, 	/*Color of index 0*/
   0x03, 0x04, 0x0d, 0xdd, 	/*Color of index 1*/
 
@@ -72,12 +72,12 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_[ERRTEMPI
   0x03, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xc0, 
 };
 
-const lv_img_dsc_t [errTempIrrat] = {
+const lv_img_dsc_t errTempIrrat = {
   .header.cf = LV_IMG_CF_INDEXED_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
   .header.w = 63,
   .header.h = 45,
   .data_size = 368,
-  .data = [errTempIrrat]_map,
+  .data = errTempIrrat_map,
 };

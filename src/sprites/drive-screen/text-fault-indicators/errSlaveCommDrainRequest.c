@@ -17,11 +17,11 @@
 #define LV_ATTRIBUTE_MEM_ALIGN
 #endif
 
-#ifndef LV_ATTRIBUTE_IMG_[ERRSLAVECOMMDRAINREQUEST]
-#define LV_ATTRIBUTE_IMG_[ERRSLAVECOMMDRAINREQUEST]
+#ifndef LV_ATTRIBUTE_IMG_ERRSLAVECOMMDRAINREQUEST
+#define LV_ATTRIBUTE_IMG_ERRSLAVECOMMDRAINREQUEST
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_[ERRSLAVECOMMDRAINREQUEST] uint8_t [errSlaveCommDrainRequest]_map[] = {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_ERRSLAVECOMMDRAINREQUEST uint8_t errSlaveCommDrainRequest_map[] = {
   0x00, 0x00, 0x02, 0x0c, 	/*Color of index 0*/
   0x03, 0x04, 0x0d, 0xdd, 	/*Color of index 1*/
 
@@ -72,12 +72,12 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_[ERRSLAVE
   0x03, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xe0, 
 };
 
-const lv_img_dsc_t [errSlaveCommDrainRequest] = {
+const lv_img_dsc_t errSlaveCommDrainRequest = {
   .header.cf = LV_IMG_CF_INDEXED_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
   .header.w = 136,
   .header.h = 45,
   .data_size = 773,
-  .data = [errSlaveCommDrainRequest]_map,
+  .data = errSlaveCommDrainRequest_map,
 };

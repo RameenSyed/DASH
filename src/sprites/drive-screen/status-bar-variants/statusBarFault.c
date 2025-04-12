@@ -17,11 +17,11 @@
 #define LV_ATTRIBUTE_MEM_ALIGN
 #endif
 
-#ifndef LV_ATTRIBUTE_IMG_STATUS BAR FAULT
-#define LV_ATTRIBUTE_IMG_STATUS BAR FAULT
+#ifndef LV_ATTRIBUTE_IMG_STATUSBARFAULT
+#define LV_ATTRIBUTE_IMG_STATUSBARFAULT
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_STATUS BAR FAULT uint8_t Status Bar Fault_map[] = {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_STATUSBARFAULT uint8_t statusBarFault_map[] = {
   0x2a, 0x2a, 0xc5, 0xfd, 	/*Color of index 0*/
   0x01, 0x01, 0x07, 0xfb, 	/*Color of index 1*/
 
@@ -212,12 +212,12 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_STATUS BA
   0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 0x00, 
 };
 
-const lv_img_dsc_t Status Bar Fault = {
+const lv_img_dsc_t statusBarFault = {
   .header.cf = LV_IMG_CF_INDEXED_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
   .header.w = 138,
   .header.h = 185,
   .data_size = 3338,
-  .data = Status Bar Fault_map,
+  .data = statusBarFault_map,
 };

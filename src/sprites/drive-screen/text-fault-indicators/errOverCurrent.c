@@ -17,11 +17,11 @@
 #define LV_ATTRIBUTE_MEM_ALIGN
 #endif
 
-#ifndef LV_ATTRIBUTE_IMG_[ERROVERCURRENT]
-#define LV_ATTRIBUTE_IMG_[ERROVERCURRENT]
+#ifndef LV_ATTRIBUTE_IMG_ERROVERCURRENT
+#define LV_ATTRIBUTE_IMG_ERROVERCURRENT
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_[ERROVERCURRENT] uint8_t [errOverCurrent]_map[] = {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_ERROVERCURRENT uint8_t errOverCurrent_map[] = {
   0x00, 0x00, 0x02, 0x0a, 	/*Color of index 0*/
   0x03, 0x04, 0x0d, 0xdd, 	/*Color of index 1*/
 
@@ -72,12 +72,12 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_[ERROVERC
   0x03, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xf8, 0x00, 
 };
 
-const lv_img_dsc_t [errOverCurrent] = {
+const lv_img_dsc_t errOverCurrent = {
   .header.cf = LV_IMG_CF_INDEXED_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
   .header.w = 90,
   .header.h = 45,
   .data_size = 548,
-  .data = [errOverCurrent]_map,
+  .data = errOverCurrent_map,
 };

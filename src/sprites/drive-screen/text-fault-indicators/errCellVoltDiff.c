@@ -17,11 +17,11 @@
 #define LV_ATTRIBUTE_MEM_ALIGN
 #endif
 
-#ifndef LV_ATTRIBUTE_IMG_[ERRCELLVOLTDIFF]
-#define LV_ATTRIBUTE_IMG_[ERRCELLVOLTDIFF]
+#ifndef LV_ATTRIBUTE_IMG_ERRCELLVOLTDIFF
+#define LV_ATTRIBUTE_IMG_ERRCELLVOLTDIFF
 #endif
 
-const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_[ERRCELLVOLTDIFF] uint8_t [errCellVoltDiff]_map[] = {
+const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_ERRCELLVOLTDIFF uint8_t errCellVoltDiff_map[] = {
   0x00, 0x00, 0x01, 0x07, 	/*Color of index 0*/
   0x03, 0x04, 0x0d, 0xda, 	/*Color of index 1*/
 
@@ -72,12 +72,12 @@ const LV_ATTRIBUTE_MEM_ALIGN LV_ATTRIBUTE_LARGE_CONST LV_ATTRIBUTE_IMG_[ERRCELLV
   0x03, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xff, 0xf8, 0x00, 
 };
 
-const lv_img_dsc_t [errCellVoltDiff] = {
+const lv_img_dsc_t errCellVoltDiff = {
   .header.cf = LV_IMG_CF_INDEXED_1BIT,
   .header.always_zero = 0,
   .header.reserved = 0,
   .header.w = 90,
   .header.h = 45,
   .data_size = 548,
-  .data = [errCellVoltDiff]_map,
+  .data = errCellVoltDiff_map,
 };
